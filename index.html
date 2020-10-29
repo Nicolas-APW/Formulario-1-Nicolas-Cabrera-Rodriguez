@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>formulario 1</title>
+</head>
+<body>
+  <h1>Formulario de registro - mi web</h1>
+  <form action="envio.php" target="_blank" method="GET">
+    <label for="Nombre">Nombre:</label>
+    <input type="text" maxlength="50" id="Nombre" name="Nombre"><br>
+    <br>
+    <label for="Apellidos">Apellidos:</label>
+    <input type="text" maxlength="50" id="Apellidos" name="Apellido"><br>
+    <br>
+    <label id="Sexo" >Sexo:</label>
+    <input type="radio" id="Hombre" name="gender" value="Hombre">
+    <label for="Hombre">Hombre</label>
+    <input type="radio" id="Mujer" name="gender" value="Mujer">
+    <label for="Mujer">Mujer</label><br> 
+  <br>
+    <label id="Correo">Correo: </label>
+    <input type="email" id="email" name="Correo">
+  <br>
+  <br>
+  <label for="Poblacion">Poblacion:</label>
+  <select id="Poblacion" name="Poblacion">
+    <option value="Alicante">Alicante</option>
+    <option value="Madrid">Madrid</option>
+    <option value="Sevilla">Sevilla</option>
+    <option value="Valencia">Valencia</option>
+  </select>
+  <br>
+  <br>
+  <label id="Descripcion">Descripcion:  </label>
+  <textarea id="comentarios" name="comentarios" rows="10" cols="40"></textarea>
+  <br>
+  <br>
+    <input type="checkbox" id="información" name="información" value="información" checked>
+    <label for="información"> "Deseo recibir información sobre novedades y 
+      ofertas"</label><br>
+  <br>
+    <input type="checkbox" id="declaración" name="declaración" value="declaración">
+    <label for="declaración"> "Declaro haber leído y aceptar las condiciones 
+      generales del programa y la normativa sobre protección de datos"</label><br>
+  <br>
+    <input id="Enviar" type="submit" value="Enviar">
+  </form>
+
+</body>
+</html>
